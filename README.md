@@ -2,15 +2,18 @@
 This repo contains the code for analyzing patients diagnosed with I61 from the MIMIC dataset.
 
 The description of the dataset can be found here: https://mimic.mit.edu/docs/iv/
+
 The introduction part of the dataset can be found here: https://docs.google.com/document/d/1ONcyFMzL23E_rYXxZ-wL-KQrthpftzEQxCRKOMPKvYQ/edit
 
-If you don't know how to work with Github, you can check my blog here:
+If you don't know how to work with GitHub, you can check my blog here:
+
 Use Git locally: https://www.wetiqe.xyz/use-git-locally-45b823846203432282684393866ea36d00
-Use Github: https://www.wetiqe.xyz/github-bb2f0ed1ff664eeaa227e0bfafd0995d
+
+Use GitHub: https://www.wetiqe.xyz/github-bb2f0ed1ff664eeaa227e0bfafd0995d
 
 # Project Structure
-The original dataset is too large for Github repo, so here only contains the code. To make sure the notebook works properly, your working directory should structured as following:
-
+The original dataset is too large for GitHub repo, so here only contains the code. To make sure the notebook works properly, your working directory should structured as following:
+```
 .
 ├── analysis
 │   ├── archive
@@ -43,18 +46,18 @@ The original dataset is too large for Github repo, so here only contains the cod
     │   ├── outputevents.csv
     │   └── procedureevents.csv
     └── LICENSE.txt
-
+```
 
 ## Analysis folder
 `I61` is the main notebook, contains the code we are going to submit. 
 The `archive` folder contains the codes we don't modify anymore.
 
 ## Data folder
-The data is avaliable on the google drive. However `chart_event.csv` is too large for google Drive, so you might not have a copy now, if you need it, let me know. 
+The data is available on the Google Drive. However `chart_event.csv` is too large for Google Drive, so you might not have a copy now, if you need it, let me know. 
 
-The MIMIC dataset is a restricted data source,  all manipulation must follow the instructions in the LICENSE.txt. In short, you can't share the code with anyone else, especially on the Internet. 
+The MIMIC dataset is a restricted data source,  all manipulation must follow the instructions in the `LICENSE.txt`. In short, you can't share the code with anyone else, especially on the Internet. 
 
-We might not use the data in hosp folder, could be removed in the next version. 
+We might not use the data in `hosp` folder, could be removed in the next version. 
 
 # Introduction
 
