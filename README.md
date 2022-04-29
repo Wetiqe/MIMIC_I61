@@ -67,23 +67,41 @@ One of the important scoring methods to determine the mortality rate among ICH p
 
 ## Data Description
 Hadm ID: Hospital stays are identified and tracked by the HADM ID, or hospital admission ID
+
 icd_code: International Classification of Diseases (ICD) is used to identify the CODED CLINICAL ENTRY
+
 icd_Version: Version of International Classification of Diseases (ICD)
+
 Anchor_year: Is de identified year occurring sometime between 2100 - 2200, 
+
 anchor_year_group: is a three year long date ranges between 2008 - 2019. For example, if a patient's anchor_year is 2158, and their anchor_year_group is 2011 - 2013 then any hospitalizations for the patient occurring in the year 2158 actually occurred sometime between 2011 - 2013
+
 anchor_age: provides the age of the patient in the given anchor_year
+
 Dod: date of death
+
 Stay_id: unique id to patient ward stay
+
 Temperature: body temperature of the patient during icu stay
+
 Heart rate: heart rate of the patient during icu stay
+
 Resperate: respiratory rate of the patient during icu stay
+
 O2sat: oxygen saturation (amount of oxygen travelling through your body with your red blood cells)
+
 Sbp: systolic blood pressure (pressure caused by your heart contracting and pushing out blood)
+
 Dbp: diastolic blood pressure (the pressure in the arteries when the heart rests between beats
+
 Verbal response:
+
 Sodium: Amount of blood sodium level in a patient
+
 Chloride: Amount of blood chloride level in a patient
+
 Magnesium: Amount of blood magnesium level in a patient
+
 Creatine: Amount of blood creatinine level in a patient
 
 ## Modelling
