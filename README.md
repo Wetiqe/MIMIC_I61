@@ -17,9 +17,9 @@ The original dataset is too large for GitHub repo, so here only contains the cod
 .
 ├── analysis
 │   ├── archive
-│   │   ├── cohort_selection
-│   │   └── example_pipeline
-│   ├── I61
+│   │   ├── cohort_selection.ipynb
+│   │   └── example_pipeline.ipynb
+│   ├── I61.ipynb
 │   └── README.md
 └── data
     ├── chart_event_filtered.csv
@@ -30,15 +30,8 @@ The original dataset is too large for GitHub repo, so here only contains the cod
     ├── ed
     │   └── vitalsign.csv
     ├── hosp
-    │   ├── d_hcpcs.csv
     │   ├── diagnoses_icd.csv
-    │   ├── d_icd_diagnoses.csv
-    │   ├── d_icd_procedures.csv
-    │   ├── d_labitems.csv
-    │   ├── drgcodes.csv
-    │   ├── hcpcsevents.csv
-    │   ├── procedures_icd.csv
-    │   └── services.csv
+    │   └── d_icd_diagnoses.csv
     ├── icu
     │   ├── chart_event.csv
     │   ├── d_items.csv
@@ -46,6 +39,7 @@ The original dataset is too large for GitHub repo, so here only contains the cod
     │   ├── outputevents.csv
     │   └── procedureevents.csv
     └── LICENSE.txt
+
 ```
 
 ## Analysis folder
@@ -56,8 +50,6 @@ The `archive` folder contains the codes we don't modify anymore.
 The data is available on the Google Drive. However `chart_event.csv` is too large for Google Drive, so you might not have a copy now, if you need it, let me know. 
 
 The MIMIC dataset is a restricted data source,  all manipulation must follow the instructions in the `LICENSE.txt`. In short, you can't share the code with anyone else, especially on the Internet. 
-
-We might not use the data in `hosp` folder, could be removed in the next version. 
 
 # Introduction
 
