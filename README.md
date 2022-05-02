@@ -10,6 +10,16 @@ If you don't know how to work with GitHub, you can check my blog here:
 Use Git locally: https://www.wetiqe.xyz/use-git-locally-45b823846203432282684393866ea36d00
 
 Use GitHub: https://www.wetiqe.xyz/github-bb2f0ed1ff664eeaa227e0bfafd0995d
+## Guidelines for reviewers and authors
+https://mimic.mit.edu/docs/community/guidelines/
+Authoring or reviewing a MIMIC paper can be challenging due to the complex nature of the data. Our recommendations for authors when writing papers, or for reviewers when reviewing papers, are:
+
+The version of MIMIC should be specified. For example: MIMIC-III v1.4, or MIMIC-IV v1.0. If researchers are using an older version, inquire as to why.
+* It is easy to conflate an ICU admission with a hospital admission. Ensure that it is clear.
+* Mortality is a common outcome, but can be defined in a number of ways. Some researchers define 30-day mortality from admission, whereas others define it from discharge. Ensure the manuscript is clear. We recommend using 30-days from admission, as this better reflects the severity of illness of the patient on admision to the ICU.
+* Avoid vague criteria. For example, “removed patients missing data” is unclear, whereas “removed patients with no heart rate measurements in the first 24 hours of their stay” is much more interpretable.
+* Verify that the MIMIC data citation is referenced, and for MIMIC-III that the paper is also cited. See the acknowledgement page for details.
+* Most of important of all, code should be included with the paper. The MIMIC data use agreement requires researchers to publish code with their paper, and there is no substitute for code in explicitly describing the methodology. e.g. guidelines for reviewers.
 
 # Project Structure
 The original dataset is too large for GitHub repo, so here only contains the code. To make sure the notebook works properly, your working directory should structured as following:
