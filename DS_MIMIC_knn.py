@@ -14,12 +14,9 @@ import operator
 import matplotlib.pyplot as plt
 
 def My_knncomper_difftest(kmax):
-    rightnumber = 0           
-    print('enter phase 2')
-    Train_acc=[]
-    Test_acc=[]
-    acc=[]
     
+    rightnumber = 0        
+    Train_acc=[]; Test_acc=[]; acc=[]
     print(" maximum K value is "+str(kmax))           
     for k in range(1,kmax):
         test_predict_score=0
@@ -64,16 +61,3 @@ def MYknn(test_object, training_object, training_object_target, K):
         predictlist.append(sortedClassCount[0][0])
     return predictlist
 
-
-
-if __name__ == '__main__':
-    MIMIC_Data=pd.read_csv('E:\\MIMIC_DS\\test2.csv') 
-    MIMIC_Y = MIMIC_Data.pop('target').values
-    MIMIC_X = MIMIC_Data.values
-    X_train, X_test, Y_train, Y_test = train_test_split(MIMIC_X, MIMIC_Y, test_size=0.2,random_state=40)  # the value will sa
-    
-    std= StandardScaler()
-    X_train_std=std.fit_transform(X_train)
-    X_test_std=std.fit_transform(X_test)
-    print('use my knn')
-    My_knncomper_difftest(15)
