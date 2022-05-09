@@ -1,22 +1,22 @@
 # -*- coding: utf-8 -*-
 """
 Created on Mon May  2 15:14:58 2022
-
 @author: jja117
 """
 
 # -*- coding: utf-8 -*-
-from sklearn.model_selection import train_test_split
 import numpy as np
-from sklearn.preprocessing import StandardScaler
 import pandas as pd
 import operator
 import matplotlib.pyplot as plt
 
-def My_knncomper_difftest(kmax):
+def My_knncomper_difftest(kmax, X_train, X_test, Y_train, Y_test):
+    rightnumber = 0           
+    print('enter phase 2')
+    Train_acc=[]
+    Test_acc=[]
+
     
-    rightnumber = 0        
-    Train_acc=[]; Test_acc=[]; acc=[]
     print(" maximum K value is "+str(kmax))           
     for k in range(1,kmax):
         test_predict_score=0
@@ -61,3 +61,24 @@ def MYknn(test_object, training_object, training_object_target, K):
         predictlist.append(sortedClassCount[0][0])
     return predictlist
 
+def shuffle_split_data(X, y,train_percentage):
+    arr_rand = np.random.rand(X.shape[0])
+    print(arr_rand)
+    split = arr_rand < np.percentile(arr_rand, train_percentage * 100)
+    X_train = X[~split]
+    y_train = y[~split]
+    X_test =  X[split]
+    y_test =  y[split]
+
+    return X_train, X_test,y_train, y_test
+
+
+if __name__ == '__main__':
+    MIMIC_Data=pd.read_csv('E:\\MIMIC_DS\\test2.csv') 
+    MIMIC_Y = MIMIC_Data.pop('target').values
+    MIMIC_X = MIMIC_Data.values
+    X_train, X_test, Y_train, Y_test= shuffle_split_data(MIMIC_X, MIMIC_Y,train_size=70)
+    X_train_std=(X_train-X_train.mean())/X_train.std()
+    X_test_std=(X_test-X_test.mean())/X_test.std()
+    print('use my knn')
+    My_knncomper_difftest(15)
