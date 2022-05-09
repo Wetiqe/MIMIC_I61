@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Mon May  2 15:14:58 2022
+
 @author: jja117
 """
 
@@ -10,12 +11,11 @@ import pandas as pd
 import operator
 import matplotlib.pyplot as plt
 
-def My_knncomper_difftest(kmax, X_train, X_test, Y_train, Y_test):
+def My_knncomper_difftest(kmax):
     rightnumber = 0           
     print('enter phase 2')
     Train_acc=[]
     Test_acc=[]
-
     
     print(" maximum K value is "+str(kmax))           
     for k in range(1,kmax):
@@ -49,36 +49,41 @@ def MYknn(test_object, training_object, training_object_target, K):
     predictlist = []
     for newpoint in test_object:
         dataSetSize = training_object.shape[0]
+        # caculate the distance matrix between new point and all training  points 
         diffMat= np.tile(newpoint, (dataSetSize, 1)) - training_object
         sqDistances = (diffMat**2).sum(axis=1)
         distances = sqDistances ** 0.5
+        # argsort: sort array and return array index,keep the orignal array.
         sortedDistIndicies = distances.argsort()
         classCount = {}
+        
         for i in range(K):
+            # get lables form 0 to k nearest training points
             voteIlabel = training_object_target[sortedDistIndicies[i]]
-            classCount[voteIlabel] = classCount.get(voteIlabel, 0) + 1  #Get the value of key from the map and return 0 without key
+            #Count different lables number 
+            classCount[voteIlabel] = classCount.get(voteIlabel, 0) + 1  
+            # sort lable and get the most lable
             sortedClassCount = sorted(classCount.items(), key=operator.itemgetter(1), reverse=True)
+        # store predict newpoint label 
         predictlist.append(sortedClassCount[0][0])
     return predictlist
 
-def shuffle_split_data(X, y,train_percentage):
+def train_test_split(X, y,train_size):
     arr_rand = np.random.rand(X.shape[0])
-    print(arr_rand)
-    split = arr_rand < np.percentile(arr_rand, train_percentage * 100)
-    X_train = X[~split]
-    y_train = y[~split]
-    X_test =  X[split]
-    y_test =  y[split]
-
+    split = arr_rand < np.percentile(arr_rand, train_size)
+    X_train = X[split]
+    y_train = y[split]
+    X_test =  X[~split]
+    y_test =  y[~split]
     return X_train, X_test,y_train, y_test
-
 
 if __name__ == '__main__':
     MIMIC_Data=pd.read_csv('E:\\MIMIC_DS\\test2.csv') 
     MIMIC_Y = MIMIC_Data.pop('target').values
     MIMIC_X = MIMIC_Data.values
-    X_train, X_test, Y_train, Y_test= shuffle_split_data(MIMIC_X, MIMIC_Y,train_size=70)
+    np.random.seed(40)
+    X_train, X_test, Y_train, Y_test= train_test_split(MIMIC_X, MIMIC_Y,train_size=70)
     X_train_std=(X_train-X_train.mean())/X_train.std()
     X_test_std=(X_test-X_test.mean())/X_test.std()
     print('use my knn')
-    My_knncomper_difftest(15)
+    My_knncomper_difftest(20)
