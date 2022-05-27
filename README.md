@@ -5,6 +5,7 @@ The description of the dataset can be found here: https://mimic.mit.edu/docs/iv/
 
 The introduction part of the dataset can be found here: https://docs.google.com/document/d/1ONcyFMzL23E_rYXxZ-wL-KQrthpftzEQxCRKOMPKvYQ/edit
 
+
 If you don't know how to work with GitHub, you can check my blog here:
 
 Use Git locally: https://www.wetiqe.xyz/use-git-locally-45b823846203432282684393866ea36d00
