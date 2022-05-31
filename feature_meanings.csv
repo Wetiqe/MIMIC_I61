@@ -1,0 +1,132 @@
+itemid,label,abbreviation,linksto,category,unitname,param_type,meanings
+220045,Heart Rate,HR,chartevents,Routine Vital Signs,bpm,Numeric,heart rate of the patient during icu stay
+220046,Heart rate Alarm - High,HR Alarm - High,chartevents,Alarms,bpm,Numeric,High heart rate measured of a patient
+220047,Heart Rate Alarm - Low,HR Alarm - Low,chartevents,Alarms,bpm,Numeric,low hear rate measured of a patient
+220048,Heart Rhythm,Heart Rhythm,chartevents,Routine Vital Signs,Text,Nominal,heart rhythm of a pateint
+220179,Non Invasive Blood Pressure systolic,NBPs,chartevents,Routine Vital Signs,mmHg,Numeric,Normal blood pressure
+220180,Non Invasive Blood Pressure diastolic,NBPd,chartevents,Routine Vital Signs,mmHg,Numeric,
+220181,Non Invasive Blood Pressure mean,NBPm,chartevents,Routine Vital Signs,mmHg,Numeric,
+220210,Respiratory Rate,RR,chartevents,Respiratory,insp/min,Numeric,respiratory rate of the patient during icu stay
+220228,Hemoglobin,Hemoglobin,chartevents,Labs,g/dl,Numeric,Hemoglobin level of a patient
+220277,O2 saturation pulseoxymetry,SpO2,chartevents,Respiratory,%,Numeric,amount of oxygen affixed to hemoglobin cells within the circulatory system.
+220545,Hematocrit (serum),Hematocrit (serum),chartevents,Labs,None,Numeric,A hematocrit (he-MAT-uh-krit) test measures the proportion of red blood cells in patients blood
+220546,WBC,WBC,chartevents,Labs,None,Numeric,blood test to measure the number of white blood cells (WBCs) in the blood of a patient
+220602,Chloride (serum),Chloride (serum),chartevents,Labs,None,Numeric,Amount of blood chloride level in a patient
+220615,Creatinine (serum),Creatinine (serum),chartevents,Labs,None,Numeric,Amount of blood creatinine level in a patient
+220621,Glucose (serum),Glucose (serum),chartevents,Labs,None,Numeric,Amount of blood glucose level in a patient
+220635,Magnesium,Magnesium,chartevents,Labs,None,Numeric,Amount of blood magnesium level in a patient
+220645,Sodium (serum),Sodium (serum),chartevents,Labs,None,Numeric,Amount of blood sodium level in a patient
+220739,GCS - Eye Opening,Eye Opening,chartevents,Neurological,Text,Ordinal,Eye opening time of patient
+223751,Non-Invasive Blood Pressure Alarm - High,NBP Alarm - High,chartevents,Alarms,mmHg,Numeric,High blood pressure measured of a patient
+223752,Non-Invasive Blood Pressure Alarm - Low,NBP Alarm - Low,chartevents,Alarms,mmHg,Numeric,low blood pressure measure of a patient
+223761,Temperature Fahrenheit,Temperature F,chartevents,Routine Vital Signs,°F,Numeric,body temperature of the patient during icu stay
+223769,O2 Saturation Pulseoxymetry Alarm - High,SpO2 Alarm - High,chartevents,Alarms,%,Numeric,amount of oxygen affixed to hemoglobin cells within the circulatory system (maximum)
+223770,O2 Saturation Pulseoxymetry Alarm - Low,SpO2 Alarm - Low,chartevents,Alarms,%,Numeric,amount of oxygen affixed to hemoglobin cells within the circulatory system (minimum)
+223781,Pain Present,Pain Present,chartevents,Pain/Sedation,Text,Binary,physical suffering or distress in a patient
+223782,Pain Type,Pain Type,chartevents,Pain/Sedation,Text,Nominal,type of physical suffering or distress
+223783,Pain Location,Pain Location,chartevents,Pain/Sedation,Text,Nominal,location of physical suffering or distress in a patient
+223791,Pain Level,Pain Level,chartevents,Pain/Sedation,Text,Ordinal,intensity of physical suffering or distress
+223792,Pain Management,Pain Management,chartevents,Pain/Sedation,Text,Nominal,management of physical suffering or distress
+223794,Pain Level Acceptable,Pain Level Acceptable,chartevents,Pain/Sedation,Text,Ordinal,threshold level of accepting physical suffering or distress
+223795,Pain Assessment Method,Pain Assessment Method,chartevents,Pain/Sedation,Text,Nominal,method to assess physical suffering or distress
+223900,GCS - Verbal Response,Verbal Response,chartevents,Neurological,Text,Ordinal,ability to a patient to respond verbally
+223901,GCS - Motor Response,Motor Response,chartevents,Neurological,Text,Ordinal,ability to a patient to respond move physically
+223907,Pupil Size Right,Pupil Size Right,chartevents,Neurological,Text,Ordinal,pupil size of a patient
+223934,Dorsal PedPulse R,Dorsal PedPulse R,chartevents,Cardiovascular (Pulses),Text,Ordinal,pulse rate of patient that is palpable on the dorsum of the foot in the first intermetatarsal space just lateral to the extensor tendon of the great toe
+223935,PostTib. Pulses R,PostTib Pulses R,chartevents,Cardiovascular (Pulses),Text,Ordinal,The posterior tibial artery pulse can be readily palpated halfway between the posterior border of the medial malleolus and the Achilles tendon right side
+223936,Radial Pulse R,Radial Pulse R,chartevents,Cardiovascular (Pulses),Text,Ordinal,Radial pulse that is measured on patients wrist right hand
+223943,Dorsal PedPulse L,Dorsal PedPulse L,chartevents,Cardiovascular (Pulses),Text,Ordinal,pulse rate of patient that is palpable on the dorsum of the foot in the first intermetatarsal space just lateral to the extensor tendon of the great toe
+223947,PostTib. Pulses L,PostTib Pulses L,chartevents,Cardiovascular (Pulses),Text,Ordinal,The posterior tibial artery pulse can be readily palpated halfway between the posterior border of the medial malleolus and the Achilles tendon left side
+223948,Radial Pulse L,Radial Pulse L,chartevents,Cardiovascular (Pulses),Text,Ordinal,Radial pulse that is measured on patients wrist left hand
+223951,Capillary Refill R,Capillary Refill R,chartevents,Cardiovascular (Pulses),Text,Ordinal, time taken for colour to return to an external capillary bed after pressure is applied to cause blanching
+223976,RUE Color,RUE Color,chartevents,Cardiovascular,Text,Nominal,right upper extremity color of patient
+223979,RLE Color,RLE Color,chartevents,Cardiovascular,Text,Nominal,right lower extremity of a patient
+223982,LUE Color,LUE Color,chartevents,Cardiovascular,Text,Nominal,left upper extremity color of a patient
+223983,LLE Color,LLE Color,chartevents,Cardiovascular,Text,Nominal,left lower extremity color of a patient
+223986,RUL Lung Sounds,RUL Lung Sounds,chartevents,Pulmonary,Text,Nominal,right upper lung sound
+223987,RLL Lung Sounds,RLL Lung Sounds,chartevents,Pulmonary,Text,Nominal,right lower lung sound
+223988,LUL Lung Sounds,LUL Lung Sounds,chartevents,Pulmonary,Text,Nominal,left upper lung sound
+223989,LLL Lung Sounds,LLL Lung Sounds,chartevents,Pulmonary,Text,Nominal,left lower lung sound
+223991,Cough Effort,Cough Effort,chartevents,Pulmonary,Text,Ordinal,Assessment of cough severity in a patient
+223992,Cough Type,Cough Type,chartevents,Pulmonary,Text,Nominal,Type of cough in a patient
+223999,Oral Cavity,Oral Cavity,chartevents,GI/GU,Text,Nominal,Oral cavity of a patient
+224000,Nares R,Nares R,chartevents,GI/GU,Text,Ordinal,the nostrils or the nasal passages.
+224001,Diet Type,Diet Type,chartevents,GI/GU,Text,Nominal,Type of diet
+224003,Abdominal Assessment,Abdominal Assessment,chartevents,GI/GU,Text,Nominal,Assessment of abdommincal in a patient
+224004,Bowel Sounds,Bowel Sounds,chartevents,GI/GU,Text,Ordinal,Bowel sound of a patient
+224015,Urine Source,Urine Source,chartevents,GI/GU,Text,Nominal,Source of urine of a patient
+224016,Urine Color,Urine Color,chartevents,GI/GU,Text,Nominal,Color of urine of a patient
+224023,Support Systems,Support Systems,chartevents,Restraint/Support Systems,Text,Nominal,network of people that can provide you with practical or emotional support
+224024,Family Communication,Family Communication,chartevents,Restraint/Support Systems,Text,Nominal,Level of familiy communication of a patient
+224026,Skin Integrity,Skin Integrity,chartevents,Skin - Assessment,Text,Binary,Skin health of a patient
+224027,Skin Temperature,Skin Temp,chartevents,Skin - Assessment,Text,Ordinal,temperature of skin of a patient
+224028,Skin Color,Skin Color,chartevents,Skin - Assessment,Text,Nominal,skin color of a patient
+224031,Edema Location,Edema Location,chartevents,Skin - Incisions,Text,Nominal,Swelling level caused by excess fluid trapped in a patients leg
+224054,Braden Sensory Perception,Braden Sensory Perception,chartevents,Skin - Assessment,Text,Ordinal,The Braden scale uses six areas to rate the risk for pressure ulcers: sensory perception moisture activity mobility nutrition and friction and shear.
+224055,Braden Moisture,Braden Moisture,chartevents,Skin - Assessment,Text,Ordinal,Moisture level perception
+224056,Braden Activity,Braden Activity,chartevents,Skin - Assessment,Text,Ordinal,Activity level of a patient
+224057,Braden Mobility,Braden Mobility,chartevents,Skin - Assessment,Text,Ordinal,Mobility level of a patient
+224058,Braden Nutrition,Braden Nutrition,chartevents,Skin - Assessment,Text,Ordinal,Nutrition level of a patient
+224059,Braden Friction/Shear,Braden Friction/Shear,chartevents,Skin - Assessment,Text,Ordinal,The patient's skin isn't fully lifted from the bed and linens and this creates a force of shear from the linens and the patient's skin moving in an opposite direction – this is shear. Friction: Gravity is not usually involved. With shear injuries  gravity usually plays a large role in the injury"
+224072,Education Learner,Education Learner,chartevents,Restraint/Support Systems,Text,Nominal,Topic of education studied by a patient
+224073,Education Topic,Education Topic,chartevents,Restraint/Support Systems,Text,Nominal,Barrier in education of a patient
+224076,Education Barrier,Education Barrier,chartevents,Restraint/Support Systems,Text,Nominal,Method of education of a patient
+224077,Education Method,Education Method,chartevents,Restraint/Support Systems,Text,Nominal,
+224079,Education Response,Education Response,chartevents,Restraint/Support Systems,Text,Ordinal,
+224080,Head of Bed,HOB,chartevents,Treatments,Text,Ordinal,Head of bed
+224082,Turn,Turn,chartevents,Treatments,Text,Nominal,
+224086,Activity Tolerance,Activity Tolerance,chartevents,Treatments,Text,Ordinal,Tolereance of activity of a patient
+224088,Pressure Reducing Device,Pressure Reducing Device,chartevents,Treatments,Text,Nominal,
+224089,Anti Embolic Device,Anti Embolic Device,chartevents,Treatments,Text,Nominal,
+224093,Position,Position,chartevents,Treatments,Text,Nominal,
+224161,Resp Alarm - High,Resp Alarm - High,chartevents,Alarms,insp/min,Numeric,
+224162,Resp Alarm - Low,Resp Alarm - Low,chartevents,Alarms,insp/min,Numeric,
+224168,Parameters Checked,Parameters Checked,chartevents,Alarms,Checkbox,Binary,
+224308,Capillary Refill L,Capillary Refill L,chartevents,Cardiovascular (Pulses),Text,Binary,time taken for colour to return to an external capillary bed after pressure is applied to cause blanching
+224409,Pain Level Response,Pain Level Response,chartevents,Pain/Sedation,Text,Nominal,Level of pain response in a patient
+224641,Alarms On,Alarms On,chartevents,Alarms,Checkbox,Binary,
+224642,Temperature Site,Temp Site,chartevents,Routine Vital Signs,Text,Nominal,
+224650,Ectopy Type 1,Ectopy Type 1,chartevents,Routine Vital Signs,Text,Nominal,
+224733,Pupil Size Left,Pupil Size Left,chartevents,Neurological,Text,Ordinal,left pupil size of patient
+224767,RUE Temp,RUE Temp,chartevents,Cardiovascular,Text,Ordinal,right upper extremity temperature of patient
+224769,LUE Temp,LUE Temp,chartevents,Cardiovascular,Text,Ordinal,left upper extremity temperature of patient
+224771,RLE Temp,RLE Temp,chartevents,Cardiovascular,Text,Ordinal,right lower extremity temperature of patient
+224773,LLE Temp,LLE Temp,chartevents,Cardiovascular,Text,Ordinal,left lower extremity temperature of patient
+224860,Skin Condition,Skin Condition,chartevents,Skin - Assessment,Text,Ordinal,Condition of skin level
+224862,Edema Amount,Edema Amount,chartevents,Skin - Incisions,Text,Ordinal,
+224876,Urine Appearance,Urine Appearance,chartevents,GI/GU,Text,Nominal,Appearance of urine in a patient
+224879,Nares L,Nares L,chartevents,GI/GU,Text,Nominal,
+225054,Anti Embolic Device Status,Anti Embolic Device Status,chartevents,Treatments,Text,Binary,Stauts of Anti embolic device
+225103,Intravenous  / IV access prior to admission,Intravenous  / IV access prior to admission,chartevents,Adm History/FHPA,Checkbox,Binary,
+225624,BUN,BUN,chartevents,Labs,None,Numeric,blood urea nitrogen shows the kidney function of a patient
+225625,Calcium non-ionized,Calcium non-ionized,chartevents,Labs,None,Numeric,non-ionized calcium level of a patient
+225664,Glucose finger stick (range 70-100),Glucose FS (range 70 -100),chartevents,Labs,None,Numeric,Glucose range of a patient
+225677,Phosphorous,Phosphorous,chartevents,Labs,None,Numeric,Phosphorous level of a patient
+226138,20 Gauge placed in outside facility,20 Gauge placed in outside facility,chartevents,Access Lines - Peripheral,Checkbox,Binary,
+226168,Oral Care,Oral Care,chartevents,Treatments,Text,Nominal,
+226253,SpO2 Desat Limit,SpO2 Desat Limit,chartevents,Alarms,%,Numeric,The “SpO2” reading on a pulse oximeter shows the percentage of oxygen in patients blood.
+226512,Admission Weight (Kg),Admission Weight (Kg),chartevents,General,kg,Numeric,Weight of a patient in kgs
+226531,Admission Weight (lbs.),Admission Weight (lbs.),chartevents,General,None,Numeric,Weight of a patient in lbs
+226732,O2 Delivery Device(s),O2 Delivery Device(s),chartevents,Respiratory,Text,Nominal,
+227073,Anion gap,Anion gap,chartevents,Labs,None,Numeric,gap between the negatively charged and positively charged electrolytes in patients blood
+227121,Pupil Response Right,Pupil Response R,chartevents,Neurological,Text,Nominal,right pupil response
+227240,NBP Alarm Source,NBP Alarm Source,chartevents,Alarms,Text,Nominal,
+227288,Pupil Response Left,Pupil Response L,chartevents,Neurological,Text,Nominal,Left pupli response
+227341,History of falling (within 3 mnths),History of falling (within 3 mnths)*,chartevents,Restraint/Support Systems,Text,Binary,Patient's history of falling
+227342,Secondary diagnosis,Secondary diagnosis,chartevents,Restraint/Support Systems,Text,Binary,Secodnary diagnosis of a patient
+227343,Ambulatory aid,Ambulatory aid,chartevents,Restraint/Support Systems,Text,Nominal,Aid given to patient in ambulance
+227344,IV/Saline lock,IV/Saline lock,chartevents,Restraint/Support Systems,Text,Binary,
+227345,Gait/Transferring,Gait/Transferring,chartevents,Restraint/Support Systems,Text,Ordinal,
+227346,Mental status,Mental status,chartevents,Restraint/Support Systems,Text,Ordinal,The mental state examination (MSE) is a structured way of observing and describing a patient's current state of mind under the domains of appearance attitude behaviour mood affect speech thought process thought content perception cognition insight and judgement.
+227368,20 Gauge Dressing Occlusive,20 Gauge Dressing Occlusive,chartevents,Access Lines - Peripheral,Checkbox,Binary,
+227442,Potassium (serum),Potassium (serum),chartevents,Labs,None,Numeric,Potassium is an essential mineral that is needed by all tissues in the body.
+227443,HCO3 (serum),HCO3 (serum),chartevents,Labs,None,Numeric,Patients metabolism level
+227457,Platelet Count,Platelet Count,chartevents,Labs,None,Numeric,Platelet count of a patient
+227465,Prothrombin time,PT,chartevents,Labs,None,Numeric,Prothrombin time (PT) is a blood test that measures the time it takes for the liquid portion (plasma) of patients blood to clot
+227466,PTT,PTT,chartevents,Labs,None,Numeric,Time taken for blood to clot in patient
+227467,INR,INR,chartevents,Labs,None,Numeric,An international normalized ratio (INR) is a blood test that indicates how well the blood is able to clot
+227944,Side Rails,Side Rails,chartevents,Restraint/Support Systems,Text,Ordinal,
+227968,All Medications Tolerated without Adverse Side Effects,All Medications Tolerated,chartevents,GI/GU,Text,Binary,
+227969,Safety Measures,Safety Measures,chartevents,Restraint/Support Systems,Text,Nominal,
+228096,Richmond-RAS Scale,Richmond-RAS Scale,chartevents,Pain/Sedation,Text,Ordinal,
+228299,Goal Richmond-RAS Scale,Goal Richmond-RAS Scale,chartevents,Pain/Sedation,Text,Ordinal,
