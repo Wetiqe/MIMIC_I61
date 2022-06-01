@@ -24,31 +24,26 @@ The version of MIMIC should be specified. For example: MIMIC-III v1.4, or MIMIC-
 
 # Project Structure
 The original dataset is too large for GitHub repo, so here only contains the code. To make sure the notebook works properly, your working directory should structured as following:
+
 ```
-.
+MIMIC/
 ├── analysis
-│   ├── archive
-│   │   ├── cohort_selection.ipynb
-│   │   └── example_pipeline.ipynb
+│   ├── feature_meanings.csv
 │   ├── I61.ipynb
 │   └── README.md
 └── data
-    ├── chart_event_filtered.csv
     ├── core
     │   ├── admissions.csv
-    │   ├── patients.csv
-    │   └── transfers.csv
+    │   └── patients.csv
     ├── ed
     │   └── vitalsign.csv
     ├── hosp
     │   ├── diagnoses_icd.csv
     │   └── d_icd_diagnoses.csv
     ├── icu
-    │   ├── chart_event.csv
+    │   ├── chart_event_filtered.csv
     │   ├── d_items.csv
-    │   ├── icustays.csv
-    │   ├── outputevents.csv
-    │   └── procedureevents.csv
+    │   └── icustays.csv
     └── LICENSE.txt
 
 ```
