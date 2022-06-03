@@ -67,6 +67,33 @@ df2 = df1[df1.itemid.isin(feature2k.index)]
 df2.compute().to_csv('chart_event_filtered.csv')
 ``` 
 
+# Code for Model Interpretation
+Logistic regression and random forest are interpretable model, however this interpretation and visualization is somehow complicated. And the introduced libary might cause incompatable problems as well, so we put the code we used here and save the correponding results. 
+## Logistic Regression
+``` python
+import eli5
+from eli5.sklearn import PermutationImportance
+
+perm = PermutationImportance(logreg).fit(X_test_std, y_test)
+eli5.show_weights(perm, feature_names=list(model_df.columns))
+```
+
+## Random Forest
+``` python
+import shap  # package used to calculate Shap values
+
+# Create object that can calculate shap values
+explainer = shap.TreeExplainer(rf)
+
+# calculate shap values. This is what we will plot.
+# Calculate shap_values for all of val_X rather than a single row, to have more data for plot.
+shap_values = explainer.shap_values(X_test)
+
+# Make plot. Index of [1] is explained in text below.
+shap.summary_plot(shap_values[1], X_test)
+plt.savefig('shap_summary_plot.svg',dpi=300,format='svg')
+```
+
 
 # REFERENCES
 
