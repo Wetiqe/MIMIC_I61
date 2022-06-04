@@ -14,7 +14,9 @@ The data we used is from MIMIC-IV, the doucment of the database can be found at 
 
 Our credentialed account is owned by Jianzhang Ni, and the cridential approvement can be found at `./etc/physionet_credential.png`. 
 
-We download the data locally and select the data of our interest based on their document. We are only able to share part of this dataset through the Google Drive :https://drive.google.com/drive/folders/12Z7bGPTRHWv0kEGcOkqH7kCf7XNEqJCf?usp=sharing
+We download the data locally and select the data of our interest based on their document. We are only able to share part of this dataset. 
+
+The data is also avaliable on the Google Drive :https://drive.google.com/drive/folders/12Z7bGPTRHWv0kEGcOkqH7kCf7XNEqJCf?usp=sharing
 
 
 ## Project Structure
