@@ -1,18 +1,40 @@
 # Predicting Mortality Rate Among Non-traumatic Intracerebral Haemorrhage Patients in Intensive Care Unit (ICU) Using MIMIC-IV Dataset
 
+## Introduction
+This is a project for the course 'foundation to data science' at University of Birmingham. 
+
+The team memebers includes: Jianzhang Ni, Jiahui An, Arjun Dave, Yihe(Kathrynn) Zhang.
+
+The project is hosted on GitHub at :https://github.com/Wetiqe/MIMIC_I61, the contributors are corresponding team members. 
+
+The data we used is from MIMIC-IV, the doucment of the database can be found at https://mimic.mit.edu/docs/iv/. MIMIC-IV is not a public available database, they have the following requirments:
+
+* Become a credentialed user on PhysioNet. This involves completion of a training course in human subjects research.
+* Sign the data use agreement (DUA). Adherence to the terms of the DUA is paramount.
+
+Our credentialed account is owned by Jianzhang Ni, and the cridential approvement can be found at `./etc/physionet_credential.png`. 
+
+We download the data locally and select the data of our interest based on their document. We are only able to share part of this dataset through the Google Drive :  https://drive.google.com/drive/folders/12Z7bGPTRHWv0kEGcOkqH7kCf7XNEqJCf?usp=sharing
+
+
 ## Project Structure
 The original dataset is too large for GitHub repo, so here only contains the code. To make sure the notebook works properly, your working directory should structured as following:
 
 ```
 MIMIC/
 ├── analysis
-│   ├── feature_meanings.csv
+│   ├── etc
+│   │   ├── feature_meanings.csv
+│   │   ├── lr_feature_importance.html
+│   │   └── physionet_credential.png
 │   ├── I61.ipynb
 │   └── README.md
 └── data
     ├── core
     │   ├── admissions.csv
     │   └── patients.csv
+    ├── ed
+    │   └── vitalsign.csv
     ├── hosp
     │   ├── diagnoses_icd.csv
     │   └── d_icd_diagnoses.csv
@@ -21,6 +43,7 @@ MIMIC/
     │   ├── d_items.csv
     │   └── icustays.csv
     └── LICENSE.txt
+
 
 ```
 
@@ -75,25 +98,11 @@ import eli5
 from eli5.sklearn import PermutationImportance
 
 perm = PermutationImportance(logreg).fit(X_test_std, y_test)
-eli5.show_weights(perm, feature_names=list(model_df.columns))
+html = eli5.show_weights(perm, feature_names=list(model_df.columns))
+
+with open('./etc/lr_feature_importance.html','w') as f:
+    f.write(html.data)
 ```
-
-## Random Forest
-``` python
-import shap  # package used to calculate Shap values
-
-# Create object that can calculate shap values
-explainer = shap.TreeExplainer(rf)
-
-# calculate shap values. This is what we will plot.
-# Calculate shap_values for all of val_X rather than a single row, to have more data for plot.
-shap_values = explainer.shap_values(X_test)
-
-# Make plot. Index of [1] is explained in text below.
-shap.summary_plot(shap_values[1], X_test)
-plt.savefig('shap_summary_plot.svg',dpi=300,format='svg')
-```
-
 
 # REFERENCES
 
@@ -101,7 +110,6 @@ plt.savefig('shap_summary_plot.svg',dpi=300,format='svg')
 Cordonnier, C., Demchuk, A., Ziai, W., & Anderson, C. S. (2018). Intracerebral 
     haemorrhage: current approaches to acute management. The Lancet, 
     392(10154), 1257–1268. https://doi.org/10.1016/s0140-6736(18)31878-6
-
 
 Carolei, A., Marini, C., di Napoli, M., di Gianfilippo, G., Santalucia, P., Baldassarre, M., 
     Giorgio De Matteis, & di Orio, F. (1997). High Stroke Incidence in the Prospective Community-Based L’Aquila Registry (1994–1998). Stroke, 28(12),         2500–2506. https://doi.org/10.1161/01.str.28.12.2500
